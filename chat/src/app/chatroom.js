@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-const UsernameForm = dynamic(() => import('./UsernameForm'), { ssr: false });
+const UsernameForm = dynamic(() => import('../components/UsernameForm'), { ssr: false });
 
 export default function Chatroom() {
   return (
