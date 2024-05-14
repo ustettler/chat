@@ -3,6 +3,10 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import firebase from 'firebase/app';
+import 'firebase/firestore'; 
+import firebaseConfig from '../../firebase/firebaseConfig';
+
 
 const UsernameForm = dynamic(() => import('./UsernameForm'), { ssr: false });
 

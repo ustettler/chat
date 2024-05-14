@@ -15,6 +15,7 @@
 
 # production
 /build
+../../firebase/firebaseConfig'
 
 # misc
 .DS_Store
