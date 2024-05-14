@@ -1,9 +1,13 @@
+'use client'
+
+import React, { useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
 const UsernameForm = dynamic(() => import('./UsernameForm'), { ssr: false });
 
 export default function Chatroom() {
+  const [username, setUsername] = useState('');
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <Head>
@@ -18,7 +22,7 @@ export default function Chatroom() {
 
       {/* Username input */}
       <main className="flex-grow flex justify-center items-center">
-        <UsernameForm />
+        <UsernameForm setUsername={setUsername} />
       </main>
 
       {/* Footer */}
