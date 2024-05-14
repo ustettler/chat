@@ -1,2 +1,2 @@
 # chat
-Chat App mit Next.Js
+Chat App mit Next.Js, Tailwind, Firebase
